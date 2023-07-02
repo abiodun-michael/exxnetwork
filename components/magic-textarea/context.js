@@ -68,8 +68,6 @@ const MagicTextareaContextProvider = ({
   };
 
   const handleError = () => {
-    setLoading(true);
-    try {
       const arr = [];
 
       const regex = /^([a-zA-Z0-9]){40}$/;
@@ -108,10 +106,7 @@ const MagicTextareaContextProvider = ({
         setErrors([]);
         setIsDone(true);
       }
-    } catch (error) {
-    } finally {
-      setLoading(false);
-    }
+   
   };
 
   const handleDone = () => {

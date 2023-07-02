@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+:root{
+    --primary-700:#6941C6;
+    --primary-50:#F9F5FF;
+    --primary-500:#9E77ED;
+    --gray:#475467;
+    --gray-iron:#70707B;
+    --purple-400:#9B8AFB;
+    --purple-600:#6938EF;
+    --purple-50: #F5F3FF;
+    --purple-500:#7A5AF8;
+    --gray-100:#F2F4F7;
+    --gray-300:#D0D5DD;
+    --gray-900:#18181B;
+    --gray-700:#344054;
+    --gray-iron-100:#F4F4F5;
+    --light-gray:#FAFAFA;
+    --gray-200:#EAECF0;
+    --gray-500:#667085;
+    --gray-600:#475467;
+    --gray-iron-200: #E4E4E7;
+    --gray-iron-400: #A0A0AB;
+    --gray-iron-300: #D1D1D6;
+    --gray-iron-900: #18181B;
+    --gray-iron-700: #3F3F46;
+    --gray-iron-500: #70707B;
+    --error-300:#FDA29B;
+    --error-25: #FFFBFA;
+    --error-600: #D92D20;
+    --warning-300: #FEC84B;
+    --warning-25:#FFFCF5;
+    --warning-600:#DC6803;
+    --success-50: #ECFDF3;
+    --success-100: #D1FADF;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,body, #__next{
+    height: 100%;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}

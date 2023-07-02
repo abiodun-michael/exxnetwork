@@ -1,0 +1,33 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended","next/core-web-vitals"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "react-hooks", "jsx-a11y"],
+  "rules": {
+    "react/no-unused-prop-types":0,
+    "react/prop-types":0,
+    "react/require-default-props": 1,
+    "react/jsx-no-duplicate-props": 2,
+    "react/jsx-indent-props": [2, 2],
+    "react/react-in-jsx-scope":0,
+    "react/no-unknown-property":0,
+    "react/display-name":0,
+    "no-unused-vars":1
+  }
+}

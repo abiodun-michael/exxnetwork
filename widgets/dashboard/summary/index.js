@@ -8,7 +8,7 @@ import { BtnGroupWrapper } from './style';
 import { toast } from 'react-hot-toast';
 
 const Summary = () => {
-  const { data, setActiveStep, completedStep, setCompletedStep } =
+  const { data,setData, setActiveStep, completedStep, setCompletedStep } =
     useContext(SenderContext);
 
   const handleGoBack = () => {
@@ -21,6 +21,20 @@ const Summary = () => {
     }
   };
 
+  const handleSend = ()=>{
+    setCompletedStep([...new Set([...completedStep, 'summary'])]);
+    setActiveStep('summary');
+
+    toast.success(
+      <div>
+        <p className="title">Successfully sent token</p>
+        <p className="desc">
+          Your token has been successfully sent to all addresses
+        </p>
+      </div>,
+    )
+  }
+
   return (
     <Card>
       <Title>Sender</Title>
@@ -32,16 +46,7 @@ const Summary = () => {
         </Button>
         <Button
           width={224}
-          onClick={() =>
-            toast.success(
-              <div>
-                <p className="title">Successfully sent token</p>
-                <p className="desc">
-                  Your token has been successfully sent to all addresses
-                </p>
-              </div>,
-            )
-          }>
+          onClick={handleSend}>
           Proceed
         </Button>
       </BtnGroupWrapper>

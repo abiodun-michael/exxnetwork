@@ -37,6 +37,7 @@ export const TextareaWrapper = styled.div`
   border-left: none;
   padding: 16px;
   position: relative;
+  border-left: 1px solid var(--purple-400);
 
   &:fullscreen {
     background-color: white;
